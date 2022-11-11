@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -15,20 +16,25 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $user = new User();
-        $user->name='EmmanuelC';
-        $user->lastname='brok';
-        $user->email='EmmanuelC@gmail.com';
-        $user->password=bcrypt('password');
-
+        $user = new User(); 
+        $user->name = 'Jonathan';
+        $user->lastname = 'Soto';
+        $user->email = 'jsoto@uabcs.mx';
+        $user->password = bcrypt('password'); 
         $user->save();
 
-        $user = new User();
-        $user->name='EmmanuelC';
-        $user->lastname='brok';
-        $user->email='EmmanuelC@gmail.com';
-        $user->password= bcrypt('password');
+        $user = new User(); 
+        $user->name = 'Edgar';
+        $user->lastname = 'Alvarez';
+        $user->email = 'edgar@alu.uabcs.mx';
+        $user->password = bcrypt('password1'); 
         $user->save();
     }
 }
+
+
+
+
+
+
 
