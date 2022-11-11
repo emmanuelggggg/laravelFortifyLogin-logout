@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+@extends('layouts.app');
+
+@section('head')
+@endsection;
+@section('contenidio')
+
 	<style type="text/css">
 		body{
 			background-color: gray;
@@ -29,4 +29,4 @@
 	</form>
 
 </body>
-</html>
+@endsection;
